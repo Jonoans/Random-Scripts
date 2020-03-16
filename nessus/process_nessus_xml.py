@@ -272,7 +272,8 @@ def search_directories():
                 if os.path.splitext(name)[1] == '.nessus':
                     nessus_files.append(os.path.join(root, name))
     else:
-        nessus_files = [f for f in os.listdir(args.directory) if os.path.isfile(f) and os.path.splitext(f) == '.nessus']
+        nessus_files = [f for f in os.listdir(args.directory) if os.path.isfile(f) and os.path.splitext(f)[1] == '.nessus']
+        nessus_files = [os.path.join(args.directory, f) for f in nessus_files]
     return nessus_files
 
 def main():
