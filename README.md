@@ -1,2 +1,2 @@
-# Work Tools
-A repository containing some of the tools I write to facilitate my work.
+# Random Scripts
+A repository containing some of random scripts I wrote to facilitate my work.
